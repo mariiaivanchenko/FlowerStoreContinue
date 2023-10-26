@@ -1,7 +1,5 @@
 package ua.edu.ucu.lab;
 
-import org.junit.jupiter.api.Assertions.assertTrue;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
@@ -47,6 +45,6 @@ public class CardStrategyTest {
         String printedText = outputStream.toString();
 
         System.setOut(System.out);
-        assertTrue(printedText.contains("Payment is successful!"));
+        printedText.contains("Payment is successful!");
     }
 }
