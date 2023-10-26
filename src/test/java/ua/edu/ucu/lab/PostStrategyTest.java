@@ -20,6 +20,7 @@ import ua.edu.ucu.lab.order.payment.PaymentType;
 public class PostStrategyTest {
     private static final double sepal = 10;
     private static final double prce = 15;
+    private static final int iter = 3;
     private Order ord = new Order();
     private Flower fl = new Flower(
         sepal, prce, FlowerColor.BLUE, FlowerType.CHAMOMILE);
@@ -28,7 +29,7 @@ public class PostStrategyTest {
 
     @BeforeEach
     public void init() {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < iter; i++) {
             bucket.addFlowerPack(flPack);
         }
         
