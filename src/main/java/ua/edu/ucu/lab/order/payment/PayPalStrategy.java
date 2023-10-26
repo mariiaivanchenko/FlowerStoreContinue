@@ -1,8 +1,13 @@
 package ua.edu.ucu.lab.order.payment;
 
 public class PayPalStrategy implements PaymentStrategy {
+    private static final double walletBalance = 1000;
     @Override
     public boolean pay(double price) {
-        return price <= 1000 ? true : false;
+        if (price <= walletBalance){
+            return true;
+        } else{
+            return false;
+        }
     }
 }
