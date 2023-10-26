@@ -18,18 +18,18 @@ import ua.edu.ucu.lab.order.delivery.DeliveryType;
 import ua.edu.ucu.lab.order.payment.PaymentType;
 
 public class DHLStrategyTest {
-    private static final double sepal = 10;
-    private static final double prce = 15;
-    private static final int iter = 3;
+    private static final double Sepal = 10;
+    private static final double Prce = 15;
+    private static final int Iter = 3;
     private Order ord = new Order();
     private Flower fl = new Flower(
-        sepal, prce, FlowerColor.BLUE, FlowerType.CHAMOMILE);
+        Sepal, Prce, FlowerColor.BLUE, FlowerType.CHAMOMILE);
     private FlowerPack flPack = new FlowerPack(fl);
     private FlowerBucket bucket = new FlowerBucket();
 
     @BeforeEach
     public void init() {
-        for (int i = 0; i < iter; i++) {
+        for (int i = 0; i < Iter; i++) {
             bucket.addFlowerPack(flPack);
         }
         
