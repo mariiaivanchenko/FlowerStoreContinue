@@ -18,18 +18,18 @@ import ua.edu.ucu.lab.order.delivery.DeliveryType;
 import ua.edu.ucu.lab.order.payment.PaymentType;
 
 public class CardStrategyTest {
-    private static final double Sepal = 10;
-    private static final double Prce = 15;
-    private static final int Iter = 3;
+    private static final double SEPAL = 10;
+    private static final double PRCE = 15;
+    private static final int ITER = 3;
     private Order ord = new Order();
     private Flower fl = new Flower(
-        Sepal, Prce, FlowerColor.BLUE, FlowerType.CHAMOMILE);
+        SEPAL, PRCE, FlowerColor.BLUE, FlowerType.CHAMOMILE);
     private FlowerPack flPack = new FlowerPack(fl);
     private FlowerBucket bucket = new FlowerBucket();
 
     @BeforeEach
     public void init() {
-        for (int i = 0; i < Iter; i++) {
+        for (int i = 0; i < ITER; i++) {
             bucket.addFlowerPack(flPack);
         }
         
