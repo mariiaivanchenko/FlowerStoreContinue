@@ -11,6 +11,6 @@ public class FlowerController {
     private static final int PRCE = 20;
     @GetMapping("/")
     public Flower getFlower() {
-	return new Flower(SEPAL, PRCE, FlowerColor.BLUE, FlowerType.ROSE);
+        return new Flower(SEPAL, PRCE, FlowerColor.BLUE, FlowerType.ROSE);
     }
 }
