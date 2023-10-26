@@ -45,6 +45,6 @@ public class PayPalStrategyTest {
         String printedText = outputStream.toString();
 
         System.setOut(System.out);
-        printedText.contains("Payment is successful!") == true;
+        printedText.contains("Payment is successful!");
     }
 }
