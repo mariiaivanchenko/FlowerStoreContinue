@@ -1,6 +1,6 @@
 package ua.edu.ucu.lab;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -18,9 +18,11 @@ import ua.edu.ucu.lab.order.delivery.DeliveryType;
 import ua.edu.ucu.lab.order.payment.PaymentType;
 
 public class PostStrategyTest {
+    private static final double sepal = 10;
+    private static final double prce = 15;
     private Order ord = new Order();
     private Flower fl = new Flower(
-        10, 15, FlowerColor.BLUE, FlowerType.CHAMOMILE);
+        sepal, prce, FlowerColor.BLUE, FlowerType.CHAMOMILE);
     private FlowerPack flPack = new FlowerPack(fl);
     private FlowerBucket bucket = new FlowerBucket();
 
